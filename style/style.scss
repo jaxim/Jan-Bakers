@@ -1,0 +1,134 @@
+// Variables
+$background: #181728; // Dark background color
+$color: #eeeeee; // Default text color
+$cl1: #00712d; // Primary brand color
+$cl2: #fffbe6; // Light secondary color
+$cl3: #ff9100; // Accent color
+$cl4: #d5ed9f; // Success/Highlight color
+$cl5: #f0eded; // Muted background color
+
+// Global Reset
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: $background;
+  color: $color;
+  font-family: "Arial", sans-serif; // Customize font as needed
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+// Header Styling
+header {
+  background: $cl1; // Primary brand color
+  padding: 0 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+  .logo {
+    img {
+      max-height: 60px;
+      filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+    }
+    h1 {
+      color: $color;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+
+    .nav {
+      a {
+        color: $cl2; // Light secondary color
+        font-weight: 500;
+        transition: color 0.3s;
+
+        &:hover {
+          color: $cl3; // Accent color
+        }
+      }
+    }
+
+    .navbtn {
+      a {
+        background-color: $cl3; // Accent color
+        color: $color; // Default text color
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        font-weight: bold;
+        transition: background 0.3s;
+
+        &:hover {
+          background: $cl4; // Success color
+          color: $background; // Contrast for hover
+        }
+      }
+    }
+  }
+}
+
+// Buttons
+button,
+.btn {
+  background-color: $cl3; // Accent color
+  color: $color; // Text color
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  &:hover {
+    background-color: $cl4; // Success color on hover
+  }
+
+  &:active {
+    background-color: darken($cl3, 10%);
+  }
+}
+
+// Footer Styling
+footer {
+  background: $cl1; // Primary brand color
+  color: $cl2; // Light text
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+
+  a {
+    color: $cl3; // Accent color
+    transition: color 0.3s;
+
+    &:hover {
+      color: $cl4; // Success color
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+
+    .navbar {
+      flex-direction: column;
+
+      .nav {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

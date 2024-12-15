@@ -1,0 +1,50 @@
+$background: #181728;
+$color: #eeeeee; // Default text color
+$cl1: #00712d; // Primary brand color
+$cl2: #fffbe6; // Light secondary color
+$cl3: #ff9100; // Accent color
+$cl4: #d5ed9f; // Success/Highlight color
+$cl5: #f0eded; // Muted background color
+
+#spot {
+  background: $background;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  position: relative;
+  width: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .icode {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  .details {
+    padding: 1rem;
+    text-align: center;
+    h3 {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+    p {
+      margin: 0;
+      color: #666;
+    }
+  }
+}

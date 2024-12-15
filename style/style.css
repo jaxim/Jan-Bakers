@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: #181728;
+  color: #eeeeee;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+header {
+  background: #00712d;
+  padding: 0 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+header .logo img {
+  max-height: 60px;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+}
+header .logo h1 {
+  color: #eeeeee;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+header .navbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+header .navbar .nav a {
+  color: #fffbe6;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+header .navbar .nav a:hover {
+  color: #ff9100;
+}
+header .navbar .navbtn a {
+  background-color: #ff9100;
+  color: #eeeeee;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+header .navbar .navbtn a:hover {
+  background: #d5ed9f;
+  color: #181728;
+}
+
+button,
+.btn {
+  background-color: #ff9100;
+  color: #eeeeee;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover,
+.btn:hover {
+  background-color: #d5ed9f;
+}
+button:active,
+.btn:active {
+  background-color: #cc7400;
+}
+
+footer {
+  background: #00712d;
+  color: #fffbe6;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+footer a {
+  color: #ff9100;
+  transition: color 0.3s;
+}
+footer a:hover {
+  color: #d5ed9f;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  header .navbar {
+    flex-direction: column;
+  }
+  header .navbar .nav {
+    margin-bottom: 0.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
